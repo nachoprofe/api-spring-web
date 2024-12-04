@@ -11,3 +11,226 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.homepage {
+  text-align: center;
+  padding: 20px;
+}
+
+.user-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: transform 0.2s;
+  text-align: left;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-content h2 {
+  font-size: 1.5em;
+  margin: 0 0 10px;
+}
+
+.card-content p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.card button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}
+
+.auth-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.auth-form h2 {
+  text-align: center;
+}
+.auth-form form div {
+  margin-bottom: 15px;
+}
+.auth-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.auth-form input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.auth-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.auth-form button:disabled {
+  background-color: #aaa;
+}
+.auth-form .error {
+  color: red;
+  text-align: center;
+}
+
+/* UserProfile Styles */
+.user-profile {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.user-profile h2 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 2em;
+}
+
+.user-info p {
+  font-size: 1.1em;
+  color: #555;
+  margin: 10px 0;
+}
+
+.user-info strong {
+  color: #333;
+}
+
+.user-profile .back-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.user-profile .back-button:hover {
+  background-color: #0056b3;
+}
+
+/* AuthForm Styles */
+.auth-form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.auth-form h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+.auth-form form div {
+  margin-bottom: 15px;
+}
+
+.auth-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.auth-form button:hover {
+  background-color: #0056b3;
+}
+
+.auth-form .toggle-button {
+  margin-top: 15px;
+  text-align: center;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.auth-form .toggle-button:hover {
+  text-decoration: underline;
+}
+
+.auth-form .error {
+  color: red;
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+.auth-form select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  transition: border-color 0.2s;
+}
+
+.auth-form select:focus {
+  border-color: #007bff;
+  outline: none;
+}
